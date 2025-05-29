@@ -23,15 +23,13 @@
       Scalar.createApiReference('#app', {
         // The URL of the OpenAPI/Swagger document
         url: 'https://api-dev.microbiomedata.org/openapi.json',
-        // Avoid CORS issues
-        proxyUrl: 'https://proxy.scalar.com',
         // Override servers identified in the OpenAPI/Swagger document
         servers: [
           {
             url: 'https://api-dev.microbiomedata.org',
             description: 'Development',
           },
-        ]        
+        ]
       })
     </script>
   </body>
